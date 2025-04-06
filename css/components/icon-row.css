@@ -1,6 +1,8 @@
 .icon-row {
   display: flex;
   justify-content: space-between;
+  margin-top: 40px;
+  color: var(--wet-asphalt);
 }
 
 .icon-row__icon {
@@ -9,10 +11,27 @@
   align-items: center;
 }
 
+.icon-row__icon i:hover {
+  cursor: pointer;
+  animation: iconBounce 1s linear infinite;
+}
+
 .icon-row__icon i {
   font-size: 35px;
 }
 
 .icon-row__icon span {
   margin-top: 40px;
+}
+
+@keyframes iconBounce {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: none;
+  }
 }

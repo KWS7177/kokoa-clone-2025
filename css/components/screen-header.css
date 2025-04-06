@@ -1,9 +1,11 @@
 .screen-header {
+  margin-top: 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: var(--horizontal-space);
   margin-bottom: 15px;
+  color: var(--wet-asphalt);
 }
 
 .screen-header__title {
@@ -14,6 +16,11 @@
 .screen-header__icons span {
   position: relative;
   margin-left: 25px;
+  transition: color 0.5s ease-in-out;
+}
+
+.screen-header__icons span:hover {
+  color: var(--yellow);
 }
 
 @keyframes rotateCog {
@@ -26,5 +33,20 @@
 }
 
 .screen-header__icons .fa-gear:hover {
+  color: var(--yellow);
   animation: rotateCog 1s linear infinite;
+}
+
+@keyframes rotateTitle {
+  form {
+    transform: none;
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+.title-effect:hover {
+  color: var(--yellow);
+  animation: rotateTitle 1s linear infinite;
 }

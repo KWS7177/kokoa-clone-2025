@@ -9,57 +9,205 @@
   <body>
     <div class="status-bar">
       <div class="status-bar__column">
-        <span>No Service</span>
+        <span class="status-bar__time">12:30</span>
+        <div class="status-bar__notification">
+          <span>40</span>
+        </div>
+      </div>
+
+      <div class="status-bar__column">
+        <i class="fa-solid fa-bell"></i>
+        <i class="fa-solid fa-volume-xmark"></i>
         <i class="fa-solid fa-wifi"></i>
-      </div>
-      <div class="status-bar__column">
-        <span>18:43</span>
-      </div>
-      <div class="status-bar__column">
+        <i class="fa-solid fa-signal"></i>
         <span>100%</span>
-        <i class="fa-solid fa-battery-full fa-xl"></i>
-        <i class="fa-solid fa-bolt"></i>
+        <i class="fa-solid fa-battery-full"></i>
       </div>
     </div>
 
     <header class="screen-header">
-      <h1 class="screen-header__title">Chats</h1>
+      <a href="chats.html">
+        <h1 class="screen-header__title title-effect">Chats</h1>
+      </a>
       <div class="screen-header__icons">
         <span>
-          <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+          <a href="find.html">
+            <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+          </a>
         </span>
         <span>
           <i class="fa-regular fa-comment-dots fa-lg"></i>
         </span>
         <span>
-          <i class="fa-solid fa-music fa-lg"></i>
-        </span>
-        <span>
           <a href="settings.html">
             <i class="fa-solid fa-gear fa-lg"></i>
+            <div class="badge3"></div>
           </a>
         </span>
       </div>
     </header>
 
     <main class="main-screen">
-      <a href="chat.html">
-        <div class="user-component">
+      <a href="chat/chat-apple.html">
+        <div class="user-component chats-effect">
           <div class="user-component__column">
             <img
               class="user-component__avatar user-component__avatar"
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStqQBAUYBAfwyvGCTBMkq6e3XTWiA5MPXBRg&s"
-              alt=""
+              src="img/apple.png"
+              alt="Apple"
             />
             <div class="user-component__text">
-              <h4 class="user-component__title">Dogs</h4>
+              <h4 class="user-component__title">Apple</h4>
+              <h6 class="user-component__subtitle">where are you?</h6>
+            </div>
+          </div>
+          <div class="user-component__column">
+            <span class="user-component__time">10:22</span>
+            <div class="badge">1</div>
+          </div>
+        </div>
+      </a>
+
+      <div class="user-component chats-effect">
+        <div class="user-component__column">
+          <img
+            class="user-component__avatar user-component__avatar"
+            src="img/kakaogames.jpg"
+            alt="kokoagames"
+          />
+          <div class="user-component__text">
+            <h4 class="user-component__title">Kokoa games</h4>
+            <h6 class="user-component__subtitle">
+              (광고) 언제나 나를 반겨주는 만남과 모험의 세상 온기 가득한
+              마비노기 모바일 지금 접속하세요.
+            </h6>
+          </div>
+        </div>
+        <div class="user-component__column">
+          <span class="user-component__time">10:17</span>
+          <div class="badge">3</div>
+        </div>
+      </div>
+
+      <a href="chat/chat-blueberry.html">
+        <div class="user-component chats-effect">
+          <div class="user-component__column">
+            <img
+              class="user-component__avatar user-component__avatar"
+              src="img/blueberry.png"
+              alt="Blueberry"
+            />
+            <div class="user-component__text">
+              <h4 class="user-component__title">Blueberry</h4>
+              <h6 class="user-component__subtitle">My breed is Spartan.</h6>
+            </div>
+          </div>
+          <div class="user-component__column">
+            <span class="user-component__time">10:13</span>
+            <div class="badge">1</div>
+          </div>
+        </div>
+      </a>
+
+      <a href="chat/chat-banana.html">
+        <div class="user-component chats-effect">
+          <div class="user-component__column">
+            <img
+              class="user-component__avatar user-component__avatar"
+              src="img/banana.png"
+              alt="Banana"
+            />
+            <div class="user-component__text">
+              <h4 class="user-component__title">Banana</h4>
               <h6 class="user-component__subtitle">
-                Please check My Kokoa Account Info
+                I want to drink vanilla kokoa latte
               </h6>
             </div>
           </div>
           <div class="user-component__column">
-            <span class="user-component__time">21:22</span>
+            <span class="user-component__time">10:06</span>
+            <div class="badge">1</div>
+          </div>
+        </div>
+      </a>
+
+      <a href="chat/chat-avocado.html">
+        <div class="user-component chats-effect">
+          <div class="user-component__column">
+            <img
+              class="user-component__avatar user-component__avatar"
+              src="img/avocado.png"
+              alt="Avocado"
+            />
+            <div class="user-component__text">
+              <h4 class="user-component__title">Avocade</h4>
+              <h6 class="user-component__subtitle">ㅇㅋ</h6>
+            </div>
+          </div>
+          <div class="user-component__column">
+            <span class="user-component__time">10:05</span>
+            <div class="badge">1</div>
+          </div>
+        </div>
+      </a>
+
+      <a href="chat/chat-cherry.html">
+        <div class="user-component chats-effect">
+          <div class="user-component__column">
+            <img
+              class="user-component__avatar user-component__avatar"
+              src="img/cherry.jpg"
+              alt="Cherry"
+            />
+            <div class="user-component__text">
+              <h4 class="user-component__title">Cherry</h4>
+              <h6 class="user-component__subtitle">where is the blackberry?</h6>
+            </div>
+          </div>
+          <div class="user-component__column">
+            <span class="user-component__time">09:58</span>
+            <div class="badge">1</div>
+          </div>
+        </div>
+      </a>
+
+      <a href="chat/chat-kiwi.html">
+        <div class="user-component chats-effect">
+          <div class="user-component__column">
+            <img
+              class="user-component__avatar user-component__avatar"
+              src="img/kiwi.jpg"
+              alt="Kiwi"
+            />
+            <div class="user-component__text">
+              <h4 class="user-component__title">Kiwi</h4>
+              <h6 class="user-component__subtitle">
+                키위는 면역력 증강, 혈관 건강, 소화 개선등에 도움이 됩니다.
+              </h6>
+            </div>
+          </div>
+          <div class="user-component__column">
+            <span class="user-component__time">09:52</span>
+            <div class="badge">1</div>
+          </div>
+        </div>
+      </a>
+
+      <a href="chat/chat-melon.html">
+        <div class="user-component chats-effect">
+          <div class="user-component__column">
+            <img
+              class="user-component__avatar user-component__avatar"
+              src="img/melon.jpg"
+              alt="Melon"
+            />
+            <div class="user-component__text">
+              <h4 class="user-component__title">Melon</h4>
+              <h6 class="user-component__subtitle">My rival is Spotify.</h6>
+            </div>
+          </div>
+          <div class="user-component__column">
+            <span class="user-component__time">09:50</span>
             <div class="badge">1</div>
           </div>
         </div>
@@ -75,7 +223,7 @@
         </li>
         <li class="nav_btn">
           <a class="nav__link" href="chats.html">
-            <span class="nav__notification badge">1</span>
+            <span class="nav__notification badge">10</span>
             <i class="fa-solid fa-comment fa-2x"></i>
           </a>
         </li>

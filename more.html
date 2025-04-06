@@ -9,21 +9,26 @@
   <body>
     <div class="status-bar">
       <div class="status-bar__column">
-        <span>No Service</span>
+        <span class="status-bar__time">12:30</span>
+        <div class="status-bar__notification">
+          <span>40</span>
+        </div>
+      </div>
+
+      <div class="status-bar__column">
+        <i class="fa-solid fa-bell"></i>
+        <i class="fa-solid fa-volume-xmark"></i>
         <i class="fa-solid fa-wifi"></i>
-      </div>
-      <div class="status-bar__column">
-        <span>18:43</span>
-      </div>
-      <div class="status-bar__column">
+        <i class="fa-solid fa-signal"></i>
         <span>100%</span>
-        <i class="fa-solid fa-battery-full fa-xl"></i>
-        <i class="fa-solid fa-bolt"></i>
+        <i class="fa-solid fa-battery-full"></i>
       </div>
     </div>
 
     <header class="screen-header">
-      <h1 class="screen-header__title">More</h1>
+      <a href="more.html">
+        <h1 class="screen-header__title title-effect">More</h1>
+      </a>
       <div class="screen-header__icons">
         <span>
           <i class="fa-solid fa-magnifying-glass fa-lg"></i>
@@ -43,19 +48,19 @@
         <div class="user-component__column">
           <img
             class="user-component__avatar user-component__avatar--xl"
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStqQBAUYBAfwyvGCTBMkq6e3XTWiA5MPXBRg&s"
+            src="img/kakao.png"
             alt=""
           />
           <div class="user-component__text">
-            <h4 class="user-component__title">Dogs</h4>
+            <h4 class="user-component__title">Kokoa</h4>
             <h6 class="user-component__subtitle">
-              +1 787-493-4219<i
+              +82 10 0123 0123<i
                 class="fa-solid fa-circle-exclamation fa-lg"
               ></i>
             </h6>
           </div>
         </div>
-        <div class="user-component__column">
+        <div class="user-component__column usercomponent__column-more-icon">
           <i class="fa-regular fa-message fa-2x"></i>
         </div>
       </div>
@@ -81,16 +86,143 @@
         <h4 class="more-suggestions__title">Suggestions</h4>
         <div class="more-suggestions__icons">
           <div class="more-suggestions__icon">
-            <div class="more-suggestions__icon-image">
-              <i class="fa-solid fa-quote-right fa-lg"></i>
-            </div>
-            <span class="more-suggestions__icon-text">Kakao Story</span>
+            <img
+              class="more-suggestions__icon-image"
+              src="img/story.png"
+              alt=""
+            />
+            <span class="more-suggestions__icon-text">Kokoa Story</span>
           </div>
+
           <div class="more-suggestions__icon">
-            <div class="more-suggestions__icon-image">
-              <i class="fa-solid fa-quote-right fa-lg"></i>
-            </div>
-            <span class="more-suggestions__icon-text">Kakao Story</span>
+            <img
+              class="more-suggestions__icon-image"
+              src="img/page.png"
+              alt=""
+            />
+            <span class="more-suggestions__icon-text">Kokoa Page</span>
+          </div>
+
+          <div class="more-suggestions__icon">
+            <img
+              class="more-suggestions__icon-image"
+              src="img/drive.png"
+              alt=""
+            />
+            <span class="more-suggestions__icon-text">Kokoa Drive</span>
+          </div>
+
+          <div class="more-suggestions__icon">
+            <img
+              class="more-suggestions__icon-image"
+              src="img/taxi.png"
+              alt=""
+            />
+            <span class="more-suggestions__icon-text">Kokoa Taxi</span>
+          </div>
+
+          <div class="more-suggestions__icon">
+            <img
+              class="more-suggestions__icon-image"
+              src="img/subway.png"
+              alt=""
+            />
+            <span class="more-suggestions__icon-text">Kokoa Metro</span>
+          </div>
+
+          <div class="more-suggestions__icon">
+            <img
+              class="more-suggestions__icon-image"
+              src="img/bus.png"
+              alt=""
+            />
+            <span class="more-suggestions__icon-text">Kokoa Bus</span>
+          </div>
+
+          <div class="more-suggestions__icon">
+            <img
+              class="more-suggestions__icon-image"
+              src="img/navi.png"
+              alt=""
+            />
+            <span class="more-suggestions__icon-text">Kokoa Navi</span>
+          </div>
+
+          <div class="more-suggestions__icon">
+            <img
+              class="more-suggestions__icon-image"
+              src="img/place.jpg"
+              alt=""
+            />
+            <span class="more-suggestions__icon-text">Kokoa Place</span>
+          </div>
+
+          <div class="more-suggestions__icon">
+            <img
+              class="more-suggestions__icon-image"
+              src="img/market.png"
+              alt=""
+            />
+            <span class="more-suggestions__icon-text">Kokoa Stock</span>
+          </div>
+
+          <div class="more-suggestions__icon">
+            <img
+              class="more-suggestions__icon-image"
+              src="img/music.png"
+              alt=""
+            />
+            <span class="more-suggestions__icon-text">Kokoa Music</span>
+          </div>
+
+          <div class="more-suggestions__icon">
+            <img class="more-suggestions__icon-image" src="img/tv.png" alt="" />
+            <span class="more-suggestions__icon-text">Kokoa TV</span>
+          </div>
+
+          <div class="more-suggestions__icon">
+            <img
+              class="more-suggestions__icon-image"
+              src="img/home.png"
+              alt=""
+            />
+            <span class="more-suggestions__icon-text">Kokoa Home</span>
+          </div>
+
+          <div class="more-suggestions__icon">
+            <img
+              class="more-suggestions__icon-image"
+              src="img/style.png"
+              alt=""
+            />
+            <span class="more-suggestions__icon-text">Kokoa Style</span>
+          </div>
+
+          <div class="more-suggestions__icon">
+            <img
+              class="more-suggestions__icon-image"
+              src="img/group.png"
+              alt=""
+            />
+            <span class="more-suggestions__icon-text">Kokoa Group</span>
+          </div>
+
+          <div class="more-suggestions__icon">
+            <img
+              class="more-suggestions__icon-image"
+              src="img/daum.jpg"
+              alt=""
+            />
+            <span class="more-suggestions__icon-text">Damn</span>
+          </div>
+
+          <div class="more-suggestions__icon">
+            <img
+              class="more-suggestions__icon-image"
+              src="img/brunch.png"
+              alt=""
+            />
+            <span class="more-suggestions__icon-text">Crunch</span>
           </div>
         </div>
       </div>
@@ -105,7 +237,7 @@
         </li>
         <li class="nav_btn">
           <a class="nav__link" href="chats.html">
-            <span class="nav__notification badge">1</span>
+            <span class="nav__notification badge">10</span>
             <i class="fa-regular fa-comment fa-2x"></i>
           </a>
         </li>

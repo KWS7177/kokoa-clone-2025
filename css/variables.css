@@ -1,5 +1,12 @@
 :root {
   --yellow: #fae100;
+  --grey: #2e363e;
+  --silver: #bdc3c7;
+  --cloud: #ecf0f1;
+  --Signature: #503a3c;
+  --wet-asphalt: #34495e;
+  --asbestos: #7f8c8d;
+  --concrete: #95a5a6;
   --horizontal-space: 25px;
   --main-border: 1px solid rgba(0, 0, 0, 0.2);
   --text-gray: rgba(0, 0, 0, 0.5);

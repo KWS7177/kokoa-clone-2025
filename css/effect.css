@@ -1,0 +1,21 @@
+.effect {
+  transition: all 0.3s ease-in-out;
+}
+
+.effect:hover {
+  border-radius: 20px;
+  box-shadow: 0px 0px 50px 5px rgba(250, 225, 0, 0.7);
+}
+
+.chats-effect,
+.open-post-effect {
+  transition: all 0.2s ease-in-out;
+}
+
+.chats-effect:hover,
+.open-post-effect:hover {
+  cursor: pointer;
+  border-radius: 20px;
+  padding: 5px;
+  box-shadow: 0px 0px 50px 5px rgba(250, 225, 0, 0.7);
+}

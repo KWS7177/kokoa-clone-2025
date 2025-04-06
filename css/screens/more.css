@@ -1,5 +1,5 @@
 .more-screen .icon-row {
-  margin-top: 40px;
+  margin-top: 60px;
 }
 
 .more-suggestions {
@@ -13,14 +13,17 @@
 }
 
 .more-suggestions__icons {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .more-suggestions__icon {
   margin-right: 30px;
+  margin-bottom: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-start;
 }
 
 .more-suggestions__icon-image {
@@ -34,11 +37,30 @@
   margin-bottom: 10px;
 }
 
+.more-suggestions__icon-image:hover {
+  cursor: pointer;
+  animation: closeIcon 0.5s linear infinite;
+}
+
 .more-suggestions__icon-image i {
   font-size: 32px;
   color: white;
 }
 
 .more-suggestions__icon-text {
+  text-align: center;
+  min-width: 100px;
   color: var(--text-gray);
+}
+
+@keyframes closeIcon {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: none;
+  }
 }

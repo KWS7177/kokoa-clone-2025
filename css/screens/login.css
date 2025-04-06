@@ -1,57 +1,88 @@
+.login-container {
+  background-color: var(--yellow);
+  width: 100%;
+  height: 100vh;
+}
+
 .welcome-header {
-  margin: 90px 0px;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.welcome-ci {
+  width: 100px;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.login-form {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  margin: 0px 50px;
 }
 
-.welcome-header__title {
-  margin-bottom: 20px;
-  font-size: 25px;
+.login-form input {
+  height: 50px;
+  padding: 0px 15px;
+  font-size: 15px;
 }
 
-.welcome-header__text {
-  width: 60%;
-  opacity: 0.7;
+.login-form input::placeholder {
+  color: var(--asbestos);
 }
 
-#login-form {
-  display: flex;
-  flex-direction: column;
-  margin: 0px 30px;
-}
-
-#login-form input {
-  border: none;
-  padding: 15px 0px;
-  font-size: 18px;
-  margin-bottom: 25px;
-}
-
-#login-form input:not([type="submit"]) {
+.login-form__id,
+.login-form__password {
+  border-top: none;
+  border-left: none;
+  border-right: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   transition: border-color 0.3s ease-in-out;
 }
 
-#login-form input::placeholder {
-  color: var(--text-gray);
+.login-form input:focus {
+  border-color: var(--Signature);
 }
 
-#login-form input:focus {
-  border-color: var(--yellow);
+.login-form__submit {
+  border: none;
+  background-color: var(--Signature);
+  color: white;
+  font-size: 15px;
+  margin-top: 10px;
 }
 
-#login-form input[type="submit"] {
-  background-color: var(--yellow);
+.login-form__submit {
   cursor: pointer;
-  padding: 20px 0px;
-  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
 }
 
-#login-form a {
-  text-align: center;
-  text-decoration: none;
-  color: inherit;
+.login-form__submit:hover {
+  background-color: var(--grey);
+  border-radius: 20px;
+  color: white;
+}
+
+.login-form__text {
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  margin-top: 50px;
+  padding: 50px 0px;
+  opacity: 0.7;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.login-form__help {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  opacity: 0.9;
+  margin: 100px 100px;
   font-size: 13px;
+}
+
+.login-form__help a:first-child:hover,
+.login-form__help a:last-child:hover {
+  color: var(--concrete);
+  transition: color 0.3s ease-in-out;
 }

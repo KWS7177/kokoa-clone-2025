@@ -1,3 +1,26 @@
+#set-screen .alt-header,
+#set-screen .status-bar {
+  background-color: white;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#set-screen .status-bar {
+  z-index: 2;
+}
+
+#set-screen .alt-header {
+  top: 10px;
+  z-index: 1;
+}
+
+.settings-list {
+  height: 100vh;
+  margin-top: 100px;
+}
+
 .settings__setting {
   padding: 20px 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -5,14 +28,50 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transition: all 0.3s ease-in-out;
 }
 
 .settings__setting i {
+  width: 40px;
   opacity: 0.8;
   margin-right: 20px;
-  font-size: 22px;
+  font-size: 25px;
 }
 
 .settings__setting-column:last-child {
+  font-size: 18px;
   opacity: 0.5;
+}
+
+.settings__setting:hover {
+  transform: scale(1.05);
+  color: var(--yellow);
+}
+
+@keyframes setLeftIn {
+  from {
+    transform: translateX(-800px);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes setRightIn {
+  from {
+    transform: translateX(800px);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.settings__setting:nth-child(odd) {
+  animation: setLeftIn 0.8s linear;
+}
+
+.settings__setting:nth-child(even) {
+  animation: setRightIn 0.8s linear;
 }
