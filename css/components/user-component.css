@@ -58,7 +58,9 @@
 }
 
 .user-component__profile {
+  min-width: 80px;
   font-size: 12px;
+  text-align: center;
   border: 1px solid var(--concrete);
   border-radius: 30px;
   padding: 8px;
